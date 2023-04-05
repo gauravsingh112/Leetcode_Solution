@@ -6,14 +6,16 @@ using namespace std;
 // } Driver Code Ends
 class Solution{
     public:
-    
+    //Complete this function
     void printNos(int N)
     {
-        if(N<1) return;
+        //BASE COND
+        if(N==0)return;
+        //fxn call
         printNos(N-1);
         cout<<N<<" ";
-    
-        }
+        
+    }
 };
 
 //{ Driver Code Starts.
