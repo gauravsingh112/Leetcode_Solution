@@ -7,7 +7,7 @@ using namespace std;
 class Solution {
   public:
     void printGfg(int N) {
-        if(N<1) return;
+        if(N<=0)return;
         printGfg(N-1);
         cout<<"GFG"<<" ";
     }
