@@ -12,10 +12,11 @@ class Solution{
     // K: element to be searche
     int searchInSorted(int arr[], int N, int K) 
     { 
-    int cnt=1;
+    int cnt=0;
        for(int i=0;i<N;i++){
            if(arr[i]==K){
-               return cnt++;
+               cnt++;
+               return cnt;
            }
        }return -1;
        
