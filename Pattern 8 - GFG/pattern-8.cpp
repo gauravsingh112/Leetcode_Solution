@@ -20,7 +20,7 @@ public:
 	        for(int j=0;j<(2*(n-i-1)+1);j++){
 	            cout<<"*";
 	        }
-	         for(int j=0;j<n-1;j++){
+	         for(int j=0;j<i;j++){
 	            cout<<" ";
 	    }cout<<endl;
 	}
