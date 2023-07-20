@@ -1,22 +1,20 @@
 class Solution {
 public:
     bool isPalindrome(int x) {
-        if(x<0){
-            return false;
+         if (x < 0) {
+            return false; // Negative numbers can't be palindromes
         }
-        long long dup=x;
-        long long revNum=0;
-        while(x>0){
-            long long ld=x%10;
-            
-            
-            revNum=(revNum*10)+ld;
-            x=x/10;
-
-        }
-        if(dup==revNum)return true;
-        else return false;
         
-    } 
-
+        long long copy = x;
+        long long num = 0;
+        while (x > 0) {
+            long long  ld = x % 10;
+            num = num * 10 + ld;
+            x = x / 10;
+        }
+        
+        return (num == copy);
+    
+        
+    }
 };
